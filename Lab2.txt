@@ -33,9 +33,20 @@ systemctl enable httpd
 echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 echo "Healthy" > /var/www/html/health.html
 
+Step 5
+Launching an instance from the created Launch template
+
+SELECT the launch template you created
+SELECT action and pick "launch instance from template" option
+Scroll down and Select "Launch instance"
+Go to instances on your AWS Console
+Select the newly created instance
+Copy the instance public IP address and paste in on a web browser.
+Output: Hello World from ip-172-31-83-204.ec2.internal
+
 Step 5 (Documentation)
 Modify and update every step you took to achieve the lab, that was not captured in the lab instruction in your local repo Lab2.txt file and save.
-On the terminal run command git add Lab2.txt
+On the terminal run g
 Git commit -m “launch template demo”
 Push to your personal repo.
 
